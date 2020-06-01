@@ -1,52 +1,62 @@
 import React from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 import { ReactComponent as Logo } from "../../assets/crown.svg";
 import "./footer.styles.scss";
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <div className="footer__logo-box">
-        <Logo alt="logo" className="footer__logo" />
-      </div>
-      <div className="row">
-        <div className="col-1-of-2">
-          <div className="footer__navigation">
-            <ul className="footer__list">
-              <li className="footer__item">
-                <Link to="/shop/hats" className="footer__link">Hats</Link>
-              </li>
-              <li className="footer__item">
-                <Link to="/shop/jackets" className="footer__link">Jackets</Link>
-              </li>
-              <li className="footer__item">
-                <Link to="/shop/sneakers" className="footer__link">Sneakers</Link>
-              </li>
-              <li className="footer__item">
-                <Link to="/shop/womens" className="footer__link">Womens</Link>
-              </li>
-              <li className="footer__item">
-                <Link to="/shop/mens" className="footer__link">Mens</Link>
-              </li>
-              <li className="footer__item">
-                <Link to="/contactus" className="footer__link">Contact Us</Link>
-              </li>
-            </ul>
+    <section id="footer">
+      <div className="container">
+        <hr />
+        <div className="footer-row">
+          <div className="footer-left-col">
+            <div className="footer-links">
+              <div className="link-title">
+                <h4>Poducts</h4>
+                <small>Our Collection</small>
+                <br />
+                <small>Editors Choice</small>
+                <br />
+                <small>CRWN Brand</small>
+              </div>
+              <div className="link-title">
+                <h4>About</h4>
+                <small>CRWN Brand</small>
+                <br />
+                <small>Branding</small>
+                <br />
+                <small>About Us</small>
+              </div>
+              <div className="link-title">
+                <h4>Support</h4>
+                <small>Features</small>
+                <br />
+                <small>Contact</small>
+              </div>
+              <div className="link-title">
+                <h4>Explore</h4>
+                <small>Clothing</small>
+                <br />
+                <small>Editors Choice</small>
+              </div>
+            </div>
+          </div>
+          <div className="footer-right-col">
+            <div className="footer-info">
+              <div className="copyright">
+                <small>support@crwn-clothing.com</small><br/>
+                <small>Copyright 2020, CRWN Clothing</small>
+              </div>
+              <div className="footer-logo">
+                <Logo className="logo"/>
+                <button className="common-btn">English</button>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="col-1-of-2">
-            <p className="footer__copyright">
-                Built by <Link to="#" className="footer__link">Arsim Sejdiu</Link> , 
-                this beautiful <Link to="/" className="footer__link">CRWN-Clothing</Link> Brand. 
-                COPYRIGHT@ by <Link to="#" className="footer__link">Arsim Sejdiu</Link>.  
-                You are 100% allowed to use this webpage for both personal and commercial use,
-                but NOT to claim it as your own design. A credit to the original author, 
-                <Link to="#" className="footer__link">Arsim Sejdiu</Link>, is of course highly appreciated!
-            </p>
-        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

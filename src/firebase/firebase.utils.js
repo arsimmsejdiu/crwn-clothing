@@ -3,7 +3,14 @@ import "firebase/firestore";
 import "firebase/auth";
 
 const config = {
-  //your config firebase api on your firebase database here
+  apiKey: "AIzaSyChpYE8K5SlqjFP0uSJj957buNQvw_fBsM",
+  authDomain: "crwn-db-c26a4.firebaseapp.com",
+  databaseURL: "https://crwn-db-c26a4.firebaseio.com",
+  projectId: "crwn-db-c26a4",
+  storageBucket: "crwn-db-c26a4.appspot.com",
+  messagingSenderId: "348758427956",
+  appId: "1:348758427956:web:dbc1fa52e53874d060fd61",
+  measurementId: "G-H2KTKP3WV3",
 };
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
