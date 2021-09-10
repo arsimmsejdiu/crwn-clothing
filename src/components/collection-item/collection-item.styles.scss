@@ -6,6 +6,12 @@
   align-items: center;
   padding: 10px 5px;
   position: relative;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    transform: scale(1.032);
+    color: #4a4a4a;
+  }
 
   .image {
     width: 100%;
@@ -13,7 +19,7 @@
     background-size: cover;
     background-position: center;
     margin-bottom: 5px;
-    transition: all 0.2s;
+    transition: all 0.2s ease-in;
   }
 
   .custom-button {

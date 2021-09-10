@@ -8,6 +8,7 @@ export const HeaderContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 25px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 `;
 
 export const LogoContainer = styled(Link)`

@@ -6,7 +6,7 @@ import './dropdown.css';
 const Dropdown = () => {
   return (
       <div className="dropdown">
-        <h1 className="dropdown-toggle">CATEGORY</h1>
+        <h1 className="dropdown-toggle">CATEGORYss</h1>
         <ul className="dropdow-menu">
             <li><Link to="/shop/hats">HATS</Link></li>
             <li><Link to="/shop/jackets">JACKETS</Link></li>
