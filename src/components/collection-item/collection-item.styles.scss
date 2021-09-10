@@ -4,7 +4,7 @@
   flex-direction: column;
   height: 350px;
   align-items: center;
-  padding: 0px 15px;
+  padding: 10px 5px;
   position: relative;
 
   .image {
@@ -13,6 +13,7 @@
     background-size: cover;
     background-position: center;
     margin-bottom: 5px;
+    transition: all 0.2s;
   }
 
   .custom-button {
@@ -21,6 +22,7 @@
     position: absolute;
     top: 255px;
     display: none;
+    transition: all 0.2s;
   }
 
   &:hover {
@@ -39,7 +41,8 @@
     height: 5%;
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: 25px;
+    font-weight: 600;
 
     .name {
       width: 90%;
