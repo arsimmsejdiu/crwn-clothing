@@ -26,8 +26,8 @@ const Footer = () => {
             </span>
             <span className="text-left">20˚C</span>
           </div>
-          <div className="text-grey-light tracking-wide">
-           {new Date().getFullYear}{" "} Arsim Sejdiu | Saturday | 30 Dec | 10:30pm
+          <div className="text-grey-light tracking-wide mt-2">
+           {new Date().getFullYear()}{" "} <span className="text-gray-900 bg-gray-200 px-2 py-1 rounded-lg opacity-30" >Arsim Sejdiu</span> | Saturday | 30 Dec | 10:30pm
           </div>
         </div>
       </div>
