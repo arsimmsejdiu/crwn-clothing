@@ -7,6 +7,7 @@
     "crwn",
     "firebaseapp",
     "firestore",
+    "middlewares",
     "nprogress"
   ]
 }
