@@ -6,7 +6,7 @@ import "./footer.styles.scss";
 
 const Footer = () => {
   return (
-    <div id="footer" className=" bg-grey-lightest mx-auto shadow rounded pb-4 bg-cover">
+    <div id="footer" className=" bg-grey-lightest mx-auto mt-10 shadow rounded pb-4 bg-cover">
       <div className="mt-2 p-4 border-b border-grey-light  text-center">
         <span className="text-4xl font-thin">Mountain View, US</span>
         <span className="hidden sm:inline-block align-bottom text-xs">

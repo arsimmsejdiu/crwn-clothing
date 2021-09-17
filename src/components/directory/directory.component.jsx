@@ -4,6 +4,7 @@ import { createStructuredSelector } from "reselect";
 
 import { selectDirectorySection } from "../../redux/directory/directory.selectors";
 import MenuItem from "../menu-item/menu-item.component";
+import { Subscribe } from '../subscribe/subscribe.component';
 import "./directory.styles.scss";
 
 const Directory = ({ sections }) => {
@@ -14,6 +15,8 @@ const Directory = ({ sections }) => {
       ) => (
         <MenuItem key={id} {...otherSectionProps} />
       ))}
+
+      <Subscribe sections={sections}/>
     </div>
   );
 };
