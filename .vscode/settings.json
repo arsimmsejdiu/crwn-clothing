@@ -8,6 +8,7 @@
     "firebaseapp",
     "firestore",
     "middlewares",
-    "nprogress"
+    "nprogress",
+    "toastify"
   ]
 }
