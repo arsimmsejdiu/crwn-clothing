@@ -13,6 +13,8 @@ const config = {
   measurementId: "G-H2KTKP3WV3",
 };
 
+firebase.initializeApp(config);
+
 export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return;
 
@@ -73,8 +75,6 @@ export const addCollectionAndDocuments = async (
 
   return await batch.commit();
 };
-
-firebase.initializeApp(config);
 
 export const getCurrentUser = () => {
   return new Promise((resolve, reject) => {

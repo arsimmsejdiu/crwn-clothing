@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import FormInput from "../form-input/form-input.component";
 import CustomButton from "../custom-button/custom-button.component";
 //import { auth } from "../../firebase/firebase.utils";
+import { Signin, SigninTitle, ButtonsBarContainer, Span } from './signin.style';
 import "./sign-in.styles.scss";
 
 import {
@@ -31,9 +32,9 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
   };
 
   return (
-    <div className="sign-in">
-      <h2 className="title">I already have an account</h2>
-      <span>Sign in with your email and password</span>
+    <Signin>
+      <SigninTitle>Already a member</SigninTitle>
+      <Span>Sign in with your email and password</Span>
 
       <form onSubmit={handleSubmit}>
         <FormInput
@@ -52,7 +53,7 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
           label="password"
           required
         />
-        <div className="buttons">
+        <ButtonsBarContainer>
           <CustomButton type="submit"> Sign In </CustomButton>
           <CustomButton
             type="button"
@@ -61,9 +62,9 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
           >
             Sign In With Google
           </CustomButton>
-        </div>
+        </ButtonsBarContainer>
       </form>
-    </div>
+    </Signin>
   );
 };
 

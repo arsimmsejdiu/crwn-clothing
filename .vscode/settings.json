@@ -4,11 +4,13 @@
     "titleBar.inactiveBackground": "#b0a8b6"
   },
   "cSpell.words": [
+    "contactus",
     "crwn",
     "firebaseapp",
     "firestore",
     "middlewares",
     "nprogress",
-    "toastify"
+    "toastify",
+    "tranformed"
   ]
 }
