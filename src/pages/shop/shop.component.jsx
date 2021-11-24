@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Route } from "react-router-dom";
 import { connect } from "react-redux";
+import { Helmet } from "react-helmet";
 
 import { fetchCollectionsStart } from "../../redux/shop/shop.actions";
 import CollectionsOverviewContainer from "../../components/collections-overview/collection-overview.container";
@@ -13,6 +14,12 @@ const ShopPage = ({ match, fetchCollectionsStart }) => {
 
   return (
     <div className="shop-page">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>CRWN Clothing - All Our Brands</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <Route
         exact
         path={`${match.path}`}
