@@ -1,11 +1,18 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 import "./contact.style.scss";
-import GoogleMaps from './google-maps.component';
+import GoogleMaps from "./google-maps.component";
 
 const ContactUs = () => {
   return (
     <React.Fragment>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>CRWN Clothing - Leave Us A Message</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <div className="wrapper">
         <h1>Contact Us</h1>
         <p>
