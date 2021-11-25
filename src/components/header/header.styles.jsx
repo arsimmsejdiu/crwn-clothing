@@ -9,13 +9,23 @@ export const HeaderContainer = styled.div`
   justify-content: space-between;
   margin-bottom: 25px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+
+  @media screen and (min-width: 800px) {
+    height: 60px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
 `;
 
 export const LogoContainer = styled(Link)`
   height: 100%;
   width: 70px;
-  padding: 25px;
   transition: all 0.2s;
+
+  @media screen and (max-width: 800px) {
+    width: 50px;
+    padding: 0;
+  }
 
   &:hover {
     transform: scale(1.075);
@@ -29,6 +39,10 @@ export const OptionsContainer = styled.div`
   align-items: center;
   justify-content: flex-end;
   padding: 25px 15px;
+
+  @media screen and (max-width: 800px) {
+    width: 80%;
+  }
 `;
 
 export const OptionLink = styled(Link)`
