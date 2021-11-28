@@ -6,32 +6,177 @@ import "./footer.styles.scss";
 
 const Footer = () => {
   return (
-    <div id="footer" className=" bg-grey-lightest mx-auto mt-10 shadow rounded pb-4 bg-cover">
-      <div className="mt-2 p-4 border-b border-grey-light  text-center">
-        <span className="text-4xl font-thin">Mountain View, US</span>
-        <span className="hidden sm:inline-block align-bottom text-xs">
-          ( 94041 )
-        </span>
-      </div>
-      <div className="text-center text-xl text-grey-light p-4">
-        <span>Fog</span>
-        <span>, fog</span>
-      </div>
-      <div className="flex justify-center">
-        <div className="text-center p-2">
-          <div className="text-lg text-grey-light">
-            <span className="text-right">15˚C</span>
-            <span className="text-center text-5xl text-gray-400 mx-6  font-thin">
-              17˚C
-            </span>
-            <span className="text-left">20˚C</span>
+    <footer className="relative bg-gray-200 dark:bg-gray-800 pt-8 pb-6 mb-0">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-wrap text-left lg:text-left">
+          <div className="w-full lg:w-6/12 px-4">
+            <h4 className="text-3xl font-semibold text-gray-700 dark:text-gray-400">
+              Let's keep in touch!
+            </h4>
+            <h5 className="text-lg mt-0 mb-2 text-gray-600 dark:text-gray-300">
+              Find us on any of these platforms, we respond 1-2 business days.
+            </h5>
+            <div className="mt-6 lg:mb-0 mb-6">
+              <button
+                className="bg-white dark:bg-gray-600 dark:text-blue-500 text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                type="button"
+              >
+                <i className="fab fa-twitter"></i>
+              </button>
+              <button
+                className="bg-white dark:bg-gray-600 dark:text-blue-900 text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                type="button"
+              >
+                <i className="fab fa-facebook-square"></i>
+              </button>
+              <button
+                className="bg-white dark:bg-gray-600 dark:text-pink-500 text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                type="button"
+              >
+                <i className="fab fa-dribbble"></i>
+              </button>
+              <button
+                className="bg-white dark:bg-gray-600 dark:text-gray-500 text-gray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                type="button"
+              >
+                <i className="fab fa-github"></i>
+              </button>
+            </div>
           </div>
-          <div className="text-grey-light tracking-wide mt-2">
-           {new Date().getFullYear()}{" "} <span className="text-gray-900 bg-gray-200 px-2 py-1 rounded-lg opacity-30" >Arsim Sejdiu</span> | Saturday | 30 Dec | 10:30pm
+          <div className="w-full lg:w-6/12 px-4">
+            <div className="flex flex-wrap items-top mb-6">
+              <div className="w-full lg:w-4/12 px-4 ml-auto">
+                <span className="block uppercase text-Gray-600 text-sm font-semibold mb-2 dark:text-gray-200">
+                  Useful Links
+                </span>
+                <ul className="list-unstyled">
+                  <li>
+                    <a
+                      className="text-gray-500 hover:text-gray-800 font-medium block pb-2 text-sm"
+                      href="https://www.creative-tim.com/presentation?ref=njs-profile"
+                    >
+                      About Us
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="text-gray-500 hover:text-gray-800 font-medium block pb-2 text-sm"
+                      href="https://blog.creative-tim.com?ref=njs-profile"
+                    >
+                      Blog
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="text-gray-500 hover:text-gray-800 font-medium block pb-2 text-sm"
+                      href="https://www.github.com/creativetimofficial?ref=njs-profile"
+                    >
+                      Github
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="text-gray-500 hover:text-gray-800 font-medium block pb-2 text-sm"
+                      href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile"
+                    >
+                      Free Products
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="w-full lg:w-4/12 px-4 ml-auto">
+                <span className="block uppercase text-Gray-600 text-sm font-semibold mb-2 dark:text-gray-200">
+                  Useful Links
+                </span>
+                <ul className="list-unstyled">
+                  <li>
+                    <a
+                      className="text-gray-500 hover:text-gray-800 font-medium block pb-2 text-sm"
+                      href="https://lableoel-admin.vercel.app"
+                    >
+                      Admin
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="text-gray-500 hover:text-gray-800 font-medium block pb-2 text-sm"
+                      href="https://blog.creative-tim.com?ref=njs-profile"
+                    >
+                      Blog
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="text-gray-500 hover:text-gray-800 font-medium block pb-2 text-sm"
+                      href="https://www.github.com/creativetimofficial?ref=njs-profile"
+                    >
+                      Github
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="text-gray-500 hover:text-gray-800 font-medium block pb-2 text-sm"
+                      href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile"
+                    >
+                      Free Products
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="w-full lg:w-4/12 px-4">
+                <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2 dark:text-gray-200">
+                  Other Resources
+                </span>
+                <ul className="list-unstyled">
+                  <li>
+                    <a
+                      className="text-gray-500 hover:text-gray-800 font-medium block pb-2 text-sm"
+                      href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile"
+                    >
+                      MIT License
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="text-gray-500 hover:text-gray-800 font-medium block pb-2 text-sm"
+                      href="https://creative-tim.com/terms?ref=njs-profile"
+                    >
+                      Terms &amp; Conditions
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="text-gray-500 hover:text-gray-800 font-medium block pb-2 text-sm"
+                      href="https://creative-tim.com/privacy?ref=njs-profile"
+                    >
+                      Privacy Policy
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="text-gray-500 hover:text-gray-800 font-medium block pb-2 text-sm"
+                      href="https://creative-tim.com/contact-us?ref=njs-profile"
+                    >
+                      Contact Us
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr className="my-6 border-gray-300 dark:bg-gray-800" />
+        <div className="flex flex-wrap items-center md:justify-between justify-center">
+          <div className="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div className="text-sm text-blueGray-500 font-semibold py-1 dark:text-gray-400">
+              Copyright ©{" "}
+              <span id="get-current-year">{new Date().getFullYear()}</span>{" "}
+              CRWN Clothing
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
