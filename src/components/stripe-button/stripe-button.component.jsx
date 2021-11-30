@@ -9,23 +9,10 @@ const StripeCheckoutButton = ({ price }) => {
   const priceForStripe = price * 100;
   const publishableKey = "pk_test_FeIq2tW29up8WL3zieRvw51000XsmDgWD4";
 
-  const onToken = (token) => {
+  const onToken = token => {
     console.log(token);
-    <ToastContainer
-      position="top-right"
-      autoClose={5000}
-      hideProgressBar={false}
-      newestOnTop={false}
-      closeOnClick
-      rtl={false}
-      pauseOnFocusLoss
-      draggable
-      pauseOnHover
-      onClick={notify}
-    />;
+    alert('Payment Succesful!');
   };
-
-  const notify = () => toast("Payment Successfully ... ");
 
   return (
     <>
